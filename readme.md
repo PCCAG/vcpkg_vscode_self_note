@@ -1,4 +1,4 @@
-
+## 参考自官网地址, 详细情况请细看 [官网文档](https://learn.microsoft.com/zh-cn/vcpkg/)
 
 ## 安装vcpkg
 
@@ -7,7 +7,7 @@
 
 ## vscode CMAKE集成
 
-**官方介绍:** 
+**官方介绍:**
 
 ![1696502899743](image/readme/1696502899743.png)
 
@@ -39,7 +39,11 @@
 
 在vcpkg.json文件所在目录运行命令:   vcpkg install 就会安装vcpkg.json中的依赖库 (国内记得开代理)
 
-## CMAKE 配置 CMakeLists.txt 
+会在文件所在目录生成 vcpkg_installed文件夹, 目录结构如下 :
+
+![1696510337592](image/readme/1696510337592.png)
+
+## CMAKE 配置 CMakeLists.txt
 
 **官方的示例代生成代码main.cxx:**
 
@@ -79,7 +83,6 @@ int main(int argc, char **argv)
     }
 }
 ```
-
 
 **CMakeLists.txt例子:**
 
