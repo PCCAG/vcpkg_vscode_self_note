@@ -1,4 +1,4 @@
-## 参考自官网地址, 详细情况请细看 [官网文档](https://learn.microsoft.com/zh-cn/vcpkg/)
+## 参考自官网, 详细情况请细看 [官网文档](https://learn.microsoft.com/zh-cn/vcpkg/)
 
 ## 安装vcpkg
 
@@ -45,7 +45,7 @@
 
 ## CMAKE 配置 CMakeLists.txt
 
-**官方的示例代生成代码main.cxx:**
+**官方的示例生成代码main.cxx:**
 
 ```cpp
 #include <cxxopts.hpp>
@@ -88,22 +88,35 @@ int main(int argc, char **argv)
 
 ```cmake
 cmake_minimum_required(VERSION 3.20)
-
+# cmake最低版本为3.20
 project(fibonacci CXX)
+#项目名 CXX表示C++项目
 
-find_package(fmt REQUIRED)
+find_package(fmt REQUIRED) 
 find_package(range-v3 REQUIRED)
 find_package(cxxopts REQUIRED)
 
+#find_package(库名 关键词)
+#REQUIRED是find_package()命令的一个可选参数，用于指定所查找的库是否是必需的。
+#如果指定了REQUIRED，但是CMake在系统中找不到该库，则会发生错误并停止构建过程。
+#如果没有指定REQUIRED，则CMake会在找不到该库时发出警告，但不会停止构建过程。
+
+
+
 set(CMAKE_CXX_STANDARD 23)
+#设置C++标准为C++23
 
 add_executable(fibo main.cxx)
+#定义生成的可执行文件名为 fibo 源码来自 main.cxx
 
 target_link_libraries(fibo
     PRIVATE
     fmt::fmt
     range-v3::range-v3
     cxxopts::cxxopts)
+# 将fibo目标链接到 fmt、range-v3 和 cxxopts 库
+# PRIVATE 关键字表示这些库仅在 fibo 目标中可见，而不会传播到依赖于 fibo 的其他目标
+
 ```
 
 ## CMAKE build

@@ -1,8 +1,8 @@
 Detecting compiler hash for triplet x64-windows...
 Detecting compiler hash for triplet x86-windows...
 All requested packages are currently installed.
-Restored 0 package(s) from C:\Users\S\AppData\Local\vcpkg\archives in 76.7 us. Use --debug to see more details.
-Total install time: 96.2 us
+Restored 0 package(s) from C:\Users\S\AppData\Local\vcpkg\archives in 73.5 us. Use --debug to see more details.
+Total install time: 88.4 us
 cxxopts provides CMake targets:
 
     # this is heuristically generated, and may not be correct
