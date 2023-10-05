@@ -1,0 +1,10 @@
+^C:\USERS\S\DESKTOP\C++LIBRARYUSE\VCPKG_VSCODE\CMAKEBUILD\CMAKEFILES\DC71444B5D346C672E5D65ABEFE105D0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode -BC:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild/fibonacci.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

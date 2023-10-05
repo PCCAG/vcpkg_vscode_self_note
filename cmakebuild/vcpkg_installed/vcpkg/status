@@ -1,0 +1,73 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d9f63df53409db1fd2783c8fc07314f99fec7e0436d271f84e82919c52ecadd7
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-12-22
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 892405b792c78fd06d4c65dab717ec2b1d36fa6af21b4ec38a34111bf3e6550a
+Status: install ok installed
+
+Package: cxxopts
+Version: 3.1.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0592bd28c7e30e8ee273eefb573a89edbfa0b819ad0029484d106b7eb9d944af
+Description: This is a lightweight C++ option parser library, supporting the standard GNU style syntax for options
+Status: purge ok not-installed
+
+Package: fmt
+Version: 9.1.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fec0abef954a7ffcb5e6a9b35a5801ca20062ae80ffdb4c25a4ce5ebb16fc635
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Status: purge ok not-installed
+
+Package: range-v3
+Version: 0.12.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 86e6e50a006ac89fa47a56e86913fa773875414d4e6933bd0254853680bd39e9
+Description: Range library for C++11/14/17/20.
+Status: purge ok not-installed
+
+Package: cxxopts
+Version: 3.1.1
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x86-windows
+Multi-Arch: same
+Abi: 638f3108a25fb379042548ff5aac3dd6d67244ce8be623ede4e4f19143360057
+Description: This is a lightweight C++ option parser library, supporting the standard GNU style syntax for options
+Status: install ok installed
+
+Package: fmt
+Version: 9.1.0
+Port-Version: 1
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x86-windows
+Multi-Arch: same
+Abi: 7c50fb1a586402497b93dd0b9786ee2754a2c5d3b2bbb454325c1a63980a859b
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Status: install ok installed
+
+Package: range-v3
+Version: 0.12.0
+Port-Version: 1
+Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
+Architecture: x86-windows
+Multi-Arch: same
+Abi: ebb61e1713ebe0646b95debc0f39a757220c1cc2eada230622ebffb05cc056c6
+Description: Range library for C++11/14/17/20.
+Status: install ok installed
+

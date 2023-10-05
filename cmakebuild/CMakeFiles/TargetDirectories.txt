@@ -1,0 +1,3 @@
+C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild/CMakeFiles/fibo.dir
+C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild/CMakeFiles/ZERO_CHECK.dir

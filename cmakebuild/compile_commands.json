@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/cmakebuild",
+  "command": "D:\\mingw64\\bin\\g++.exe -DFMT_SHARED @CMakeFiles/fibo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\fibo.dir\\main.cxx.obj -c C:\\Users\\S\\Desktop\\c++libraryUSE\\vcpkg_vscode\\main.cxx",
+  "file": "C:/Users/S/Desktop/c++libraryUSE/vcpkg_vscode/main.cxx",
+  "output": "CMakeFiles/fibo.dir/main.cxx.obj"
+}
+]

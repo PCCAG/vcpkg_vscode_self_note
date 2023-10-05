@@ -1,0 +1,26 @@
+Detecting compiler hash for triplet x64-windows...
+Detecting compiler hash for triplet x86-windows...
+All requested packages are currently installed.
+Restored 0 package(s) from C:\Users\S\AppData\Local\vcpkg\archives in 76.7 us. Use --debug to see more details.
+Total install time: 96.2 us
+cxxopts provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(cxxopts CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE cxxopts::cxxopts)
+
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
+range-v3 provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(range-v3 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE range-v3::meta range-v3::concepts range-v3::range-v3)
+
